@@ -1,0 +1,114 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* Fonte vintage */
+    background-color: #F5F5DC;
+    /* Cor de fundo vintage */
+    color: #8B4513;
+    /* Cor de texto vintage */
+}
+
+.main-header {
+    background-image: url('../image/back.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+    height: 20vh;
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Cor do texto do título e subtítulo */
+}
+
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* Cor de fundo do menu */
+}
+
+.header-nav li {
+    float: left;
+}
+
+.header-nav li a {
+    display: block;
+    color: white;
+    /* Cor do texto do menu */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-nav li a:hover {
+    background-color: #111;
+    /* Cor de fundo do menu ao passar o mouse */
+}
+
+
+/* Resto do seu código CSS */
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.card {
+    box-sizing: border-box;
+    width: calc(33.33% - 2%);
+    border: 1px solid #8B4513;
+    /* Cor de borda vintage */
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #FAEBD7;
+    /* Cor de fundo vintage */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-button {
+    padding: 15px 25px;
+    margin-top: 15px;
+    background-color: #8B4513;
+    /* Cor de fundo vintage */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #A0522D;
+    /* Cor de hover vintage */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2%);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
